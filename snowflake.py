@@ -1,11 +1,14 @@
 import turtle
 from random import *
 
+# initate turtle bernd
 bernd = turtle.Turtle()
 bernd.speed(0)
+
+# snowflake colors to choose from
 colors = ['blue', 'red', 'green', 'gold', 'purple', 'black', 'cyan', 'lavender', 'CadetBlue3']
 
-
+# generates random snowflake
 def randflake(flakeno):
     bernd.color(choice(colors))
     for i in range(12):
@@ -16,6 +19,7 @@ def randflake(flakeno):
             bernd.right(180)
         bernd.right(30)
 
+# generates a perfect snowflake branch
 def branch():
     for i in range(3):
         for i in range(3):
@@ -28,16 +32,19 @@ def branch():
     bernd.right(90)
     bernd.forward(30)
     
+# generates a normal snowflake
 def normflake():
     bernd.color(choice(colors))
     for i in range(8):
         branch()
         bernd.left(45)
         
+# moving pen to starting position
 bernd.penup()
 bernd.goto(100,200)
 bernd.pendown()
 
+# creating a mixture of snowflakes
 for i in range(5):
     randflake(randint(2,8))
     bernd.penup()

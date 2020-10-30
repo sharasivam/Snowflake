@@ -16,3 +16,6 @@ Bisher unbekannt war uns die def Funktion bzw. Zuweisung. Sie erstellt eine eige
 # Schwierigkeiten
  Die Schwierigkeit in diesem Projekt lag darin, mit Hilfe von der Randombibliothek jede Schneeflocke anders aussehen zu lassen. Diese in die richtige Form und mit wenigeren 
  Strichen zu zeichnen war der Knackpunkt.
+
+# Update 30. Oct 2020
+Alle vorhandenen for-Schleifen wurden mit einer while-Schleife ersetzt. Dazu wurden Variablen vor der jeweiligen Schleife initiert und als 'Counter' genutzt um mit jeder Schleife die Höhe des Counters zu erhöhen und abzufragen ob der Counter nun die gewünschte Zahl erreicht hat, mithilfe einer 'kleiner als' Abfrage.

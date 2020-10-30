@@ -28,11 +28,11 @@ def branch():
             bernd.forward(10)
             bernd.backward(10)
             bernd.right(45)
-            count2 = count2 + 1
+            count2 += 1
         bernd.left(90)
         bernd.backward(10)
         bernd.left(45)
-        count = count + 1
+        count += 1
     bernd.right(90)
     bernd.forward(30)
     
@@ -43,7 +43,7 @@ def normflake():
     while i < 8:
         branch()
         bernd.left(45)
-        i = i + 1
+        i += 1
         
 # moving pen to starting position
 bernd.penup()
@@ -51,7 +51,9 @@ bernd.goto(100,200)
 bernd.pendown()
 
 # creating a mixture of snowflakes
-for i in range(1):
+manyflakes = int(input("How many snowflakes do you want? "))
+countflakes = 0
+while countflakes < manyflakes:
 #     randflake(randint(2,8))
 #     bernd.penup()
 #     bernd.right(76)
@@ -59,6 +61,7 @@ for i in range(1):
 #     bernd.pendown()
     normflake()
     bernd.penup()
-    bernd.right(60)
+    bernd.right(randint(45,160))
     bernd.forward(250)
     bernd.pendown()
+    countflakes += 1

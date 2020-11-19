@@ -3,7 +3,7 @@ from random import *
 
 # initate turtle bernd
 bernd = turtle.Turtle()
-bernd.speed(0)
+bernd.speed(1)
 
 # snowflake colors to choose from
 colors = ['blue', 'red', 'green', 'gold', 'purple', 'pink', 'cyan', 'black', 'CadetBlue3']
@@ -51,7 +51,7 @@ bernd.goto(100,200)
 bernd.pendown()
 
 # creating a mixture of snowflakes
-manyflakes = int(input("How many snowflakes do you want? "))
+manyflakes = 1 #int(input("How many snowflakes do you want? "))
 countflakes = 0
 while countflakes < manyflakes:
 #     randflake(randint(2,8))
